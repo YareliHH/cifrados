@@ -1,0 +1,53 @@
+.acerca-de-container {
+    border: 2px solid #007BFF; 
+    border-radius: 10px; 
+    padding: 30px; 
+    margin: 20px auto; 
+    background-color: #ffffff; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    text-align: center; /* Centrar el texto en todo el contenedor */
+}
+
+.acerca-de-container h1 {
+    color: #007BFF; /* Color del título */
+}
+
+.mision-evolucion-container {
+    display: flex; /* Utiliza flexbox para alinear horizontalmente */
+    justify-content: center; /* Centra los elementos en el eje horizontal */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: 20px 0; /* Margen entre el contenedor y los párrafos */
+}
+
+.mision, .evolucion {
+    width: 45%; /* Cada bloque ocupa el 45% del ancho del contenedor */
+    text-align: center; /* Centra el texto dentro de cada bloque */
+    margin: 0 10px; /* Espacio entre los bloques */
+}
+
+.acerca-de-container p {
+    margin: 15px 0; /* Espaciado entre párrafos */
+}
+
+.acerca-de-container a {
+    color: #007BFF; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado en enlaces */
+}
+
+.acerca-de-container a:hover {
+    text-decoration: underline; /* Subrayado en enlaces al pasar el mouse */
+}
+
+@media (max-width: 600px) {
+    .mision-evolucion-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Alinea al centro en pantallas pequeñas */
+    }
+
+    .mision, .evolucion {
+        width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+        margin: 10px 0; /* Margen entre los bloques en pantallas pequeñas */
+        text-align: center; /* Alineación de texto al centro */
+    }
+}
